@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4aa1b689e6487b32ebb72f3a8108a7a",
+    "content-hash": "323d578ead9b3eeb55b9dc6bb60c1058",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1099,27 +1099,28 @@
             }
         },
         {
-            "name": "drupal/bootstrap",
-            "version": "3.23.0",
+            "name": "drupal/bootstrap4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.23"
+                "url": "https://git.drupalcode.org/project/bootstrap4.git",
+                "reference": "2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.23.zip",
-                "reference": "8.x-3.23",
-                "shasum": "9849be667cc678a91ad29f77c2baea2cf16878bc"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4-2.1.5.zip",
+                "reference": "2.1.5",
+                "shasum": "93937801e98e6beabe9e62a67de17532381f994d"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9",
+                "symfony/filesystem": "^3|^4|^5"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.23",
-                    "datestamp": "1592175762",
+                    "version": "2.1.5",
+                    "datestamp": "1612185970",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1128,32 +1129,24 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0"
             ],
             "authors": [
                 {
-                    "name": "Mark Carver (markcarver)",
-                    "homepage": "https://www.drupal.org/u/markcarver",
+                    "name": "Vladimir Roudakov (vladimiraus)",
+                    "homepage": "https://www.drupal.org/u/vladimiraus",
                     "role": "Maintainer"
                 },
                 {
-                    "name": "John McCormick (neardark)",
-                    "homepage": "https://www.drupal.org/u/neardark",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "Fabiano Sant'Ana (wundo)",
-                    "homepage": "https://www.drupal.org/u/wundo",
-                    "role": "Co-maintainer"
+                    "name": "jannakha",
+                    "homepage": "https://www.drupal.org/user/3085703"
                 }
             ],
-            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "https://www.drupal.org/project/bootstrap",
+            "description": "Master theme using Bootstrap 4: powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap4",
             "support": {
-                "source": "https://git.drupalcode.org/project/bootstrap",
-                "docs": "https://drupal-bootstrap.org",
-                "issues": "https://www.drupal.org/project/issues/bootstrap",
-                "irc": "irc://irc.freenode.org/drupal-bootstrap"
+                "source": "https://git.drupalcode.org/project/bootstrap4",
+                "issues": "https://www.drupal.org/project/issues/bootstrap4"
             }
         },
         {
@@ -1800,6 +1793,49 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/drush",
+            "version": "6.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/drush.git",
+                "reference": "8.x-6.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drush-8.x-6.0-rc4.zip",
+                "reference": "8.x-6.0-rc4",
+                "shasum": "b937035f9de947190cc2438decb56483ff7cc1cd"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-6.0-rc4",
+                    "datestamp": "1376806255",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/drush",
+            "support": {
+                "source": "https://git.drupalcode.org/project/drush"
             }
         },
         {
@@ -4790,6 +4826,68 @@
             "time": "2020-05-05T15:06:23+00:00"
         },
         {
+            "name": "symfony/filesystem",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "262d033b57c73e8b59cd6e68a45c528318b15038"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/262d033b57c73e8b59cd6e68a45c528318b15038",
+                "reference": "262d033b57c73e8b59cd6e68a45c528318b15038",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v5.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-27T10:01:46+00:00"
+        },
+        {
             "name": "symfony/http-foundation",
             "version": "v3.4.41",
             "source": {
@@ -6449,7 +6547,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/drush": 5
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

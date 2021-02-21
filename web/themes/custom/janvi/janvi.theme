@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * SUBTHEME theme file.
+ */
+
+/**
+ * hook_preprocess_html()
+ */
+function janvi_preprocess_html(&$variables){
+    // Add page-node-id class to body
+    if ($node = \Drupal::request()->attributes->get('node')) {
+      $variables['attributes']['class'][] = 'page-node-' . $node->id();
+    }
+}

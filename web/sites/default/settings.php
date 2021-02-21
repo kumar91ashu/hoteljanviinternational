@@ -800,3 +800,5 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_hoteljanviinternational_dd.inc';
 }
 // </DDSETTINGS>
+
+$settings['hash_salt'] = 'ZGVmYXVsdAB/Wd0D9As=';
